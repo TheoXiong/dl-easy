@@ -5,12 +5,20 @@
   "main": "src/index.js",
   "scripts": {
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheoXiong/dl-easy.git"
+  },
   "keywords": [
     "download",
     "file",
     "electron",
     "easy"
   ],
+  "bugs": {
+    "url": "https://github.com/TheoXiong/dl-easy/issues"
+  },
+  "homepage": "https://github.com/TheoXiong/dl-easy#readme",
   "author": "TheoXiong",
   "license": "MIT"
 }
