@@ -1,0 +1,16 @@
+{
+  "name": "dl-easy",
+  "version": "1.0.0",
+  "description": "Simply download file in electron application",
+  "main": "src/index.js",
+  "scripts": {
+  },
+  "keywords": [
+    "download",
+    "file",
+    "electron",
+    "easy"
+  ],
+  "author": "TheoXiong",
+  "license": "MIT"
+}
