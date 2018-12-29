@@ -4,14 +4,12 @@ const download = (win, url = '', options = {}) => {
       return reject(new Error('In need of a valid instance of BrowserWindow'))
     }
     
-    const session = win.webContents.session
     const listener = (event, item, webContents) => {
       if (typeof options.onStart === 'function') {
         options.onStart(item)
       }
-  
+
       item.once('done', (event, state) => {
-        session.removeListener('will-download', listener)
         if (state === 'completed') {
           resolve(item)
         } else if (state === 'cancelled') {
@@ -23,8 +21,8 @@ const download = (win, url = '', options = {}) => {
         }
       })
     }
-  
-    session.on('will-download', listener)
+    
+    win.webContents.session.once('will-download', listener)
     win.webContents.downloadURL(url)
   })
 }
