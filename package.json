@@ -1,6 +1,6 @@
 {
   "name": "dl-easy",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Simply download file in electron application",
   "main": "src/index.js",
   "scripts": {
